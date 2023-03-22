@@ -5,6 +5,7 @@ frappe.provide("erpnext.accounts");
 {% include 'erpnext/public/js/controllers/buying.js' %};
 
 erpnext.accounts.PurchaseInvoice = class PurchaseInvoice extends erpnext.buying.BuyingController {
+	
 	setup(doc) {
 		frm.make_methods = {
 			'Landed Cost Voucher': () => {
